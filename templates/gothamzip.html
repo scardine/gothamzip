@@ -30,7 +30,10 @@
                     Ok, bat-friend, {{ zip}} is a valid Ghotham Zipcode.
                 </h3>
                 <img src="{% static 'img/ok.svg' %}" alt="">
-            {% elif form.error_list %}
+            {% elif error %}
+                <h3>
+                    Stop and place your hands where I can see.
+                </h3>
                 <img src="{% static 'img/wrong.svg' %}" alt="">
             {% endif %}
         </div>

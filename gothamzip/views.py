@@ -9,11 +9,7 @@ class ZipCheckView(FormView):
 
     def form_valid(self, form):
         zipcode = form.cleaned_data.get("zip")
-        return render(
-            self.request,
-            self.template_name,
-            {
-                "zip": zipcode,
-                "form": form,
-            },
-        )
+        return self.render_to_response(self.get_context_data(form=form, zip=zipcode))
+
+    def form_invalid(self, form):
+        return self.render_to_response(self.get_context_data(form=form, error=True))

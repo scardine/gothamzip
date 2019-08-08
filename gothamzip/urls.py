@@ -19,6 +19,6 @@ from django.urls import path
 from gothamzip.views import ZipCheckView
 
 urlpatterns = [
-    path('', ZipCheckView.as_view(), name="zip-check"),
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
+    path("", ZipCheckView.as_view(), name="zip-check"),
 ]
