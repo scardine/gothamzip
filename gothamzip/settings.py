@@ -25,7 +25,7 @@ SECRET_KEY = "6ch-md+rvh-9$4m@zu_uh*tj6ni0itg*n7f6%-)471oi@^#g4m"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", False)
 
-ALLOWED_HOSTS = [os.environ.get("DOMAIN", "gotham.scardine.com.br")]
+ALLOWED_HOSTS = [os.environ.get("DOMAIN", "gotham.scardine.com.br"), "localhost"]
 
 # Application definition
 
