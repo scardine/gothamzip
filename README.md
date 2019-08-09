@@ -2,7 +2,7 @@
 
 This repo is a "take home" excercise from a recruiter that asked to remain anonymous (so I can't post the requirements but it involves telling if a certain zipcode is valid according to some funny rules).
 
-This was tested only in Python 2.7:
+This was tested only in Python 3.7:
 
     $ python manage.py test
     Creating test database for alias 'default'...
@@ -22,3 +22,7 @@ I assume you will not deploy this toy project so just run it:
 
     python manage.py runserver
     
+I found a missing feature in the 
+Django-Bootrstrap4 library and implemented it, 
+my [upstream patch was accepted](https://github.com/zostera/django-bootstrap4/pull/162).
+
